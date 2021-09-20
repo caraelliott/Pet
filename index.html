@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content=
@@ -12,13 +11,11 @@
         @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
     </style>
 </head>
-
 <body>
 	<div class="container">
 		<h1>Virtual Pet!</h1>
 
 		<div class="petDiv">
-			
 			<img class="img1" src="./parviz.png">
             <p class="Pet">Pet</p>
 		</div>
@@ -33,100 +30,40 @@
 
         <div class="container bottom">
             <div class="col">
-                <button type="button" class="butn"
-                onClick="petHunger()">
+                <button type="button" class="butn" id="feed">
                 Feed
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="butn"
-                onClick="petMood()">
+                <button type="button" class="butn" id="play">
                 Play
                 </button>
             </div>
             <div class="col">
-                <button type="button" class="butn"
-                onClick="petEnergy()">
+                <button type="button" class="butn" id="nap">
                 Nap
                 </button>
             </div>
-            
-
-            
-		    
 	    </div>
 
         <div class="statsbox, flex-grid">
             <div class="col">
-            <h2>Hunger: <progress id="hunger" value="100" max="100"></progress></h2>    
-
-            <h2>Mood: <progress id="mood" value="100" max="100"></progress></h2> 
-        
-                            
+            <h2>Hunger: <progress id="hunger" value="100" max="100"></progress></h2>
+            <h2>Mood: <progress id="mood" value="100" max="100"></progress></h2>              
             <h2>Energy: <progress id="energy" value="100" max="100"></progress></h2>
-            
             <!-- <h1>Health: <progress id="health" value="100" max="100"></progress></h1> -->
             </div>
-            
         </div>
-
-   
 	</div>
-	<!-- <div class="container bottom">
-		<button type="button" class="butn"
-			onClick="rollTheDice()">
-			Roll the Dice
-		</button>
-	</div> -->
 	
+    <footer>
+        <div class="flex-grid">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </footer>
 
-    <!-- <script>
-  
-        // Player name
-        var pet = "Your Pet";
-        /* var player2 = "Player 2"; */
-      
-        // Function to change the pet name
-        function editName() {
-            pet = prompt("Change Pet name");
-            /* player2 = prompt("Change player2 name"); */
-      
-            document.querySelector("p.Pet").innerHTML = pet;
-            /*document.querySelector("p.Player2").innerHTML = player2; */
-        }
-        
-        //export class Cat {
-
-          //  mood = 0;
-          //  energy = 0;
-          //  hunger = 0;
-            
-          //  constructor(string) {}
-
-        //}
-
-        -->
-    
-    </script>
-
-    <script src=./app.js>
-    var myPet = "Your Pet";
-    function editName() {
-        myPet = prompt("Change Pet name");
-        document.querySelector("p.Pet").innerHTML = myPet;
-
-    </script>
-    <script src="pet.js"></script>
+    <script src=./app.js></script>
 </body>
-
-<footer>
-
-    <div class="flex-grid">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-    </div>
-    
-</footer>
-
 </html>
